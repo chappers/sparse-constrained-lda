@@ -98,7 +98,7 @@ class TwentyNewsDataset(Dataset):
         pass
 
     def load_data(self, path=None):
-        dataset = fetch_20newsgroups(subset='all')
+        dataset = fetch_20newsgroups(subset='train')
         vectorizer = CountVectorizer(max_df=0.5, max_features=1000, min_df=2, stop_words='english',
                                      analyzer='word', token_pattern='[a-z]+')
 
@@ -121,5 +121,5 @@ if __name__ == '__main__':
     elif name == '20news':
         dataset = TwentyNewsDataset()
         dataset.load_data()
-    print dataset.word_size
-    print dataset.dictionary
+    print(dataset.word_size )
+    print(dataset.dictionary)

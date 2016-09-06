@@ -1,5 +1,4 @@
-wordseed sandy 0
-docseed 1 4
-#docseed 0 3
-#docpair 1 200
-wordpair sandy storm
+wordpair pitt pittsburgh
+wordpair date time
+wordpair sci science
+wordpair religion religious
